@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.104,D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uModels.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.325,D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uOptions.pas=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.341,D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\Unit1.pas=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uLog.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.578,D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\Unit1.pas=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uGUIElements.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.295,D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\Unit1.pas=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uMaterials.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.584,=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uMaterials.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.578,D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uMaterials.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.913,D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\SwitсhBlade.dproj=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\SwithBlade.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.447,D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uMain.dfm=D:\Мои документы\RAD Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.341,D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\Unit1.dfm=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uLog.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.513,=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.776,=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.749,=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.148,D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uLog.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.517,D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\SwithBlade.dproj=D:\Мои документы\RAD Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.805,=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uLog.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.685,D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\Unit1.pas=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uCommonFuncProc.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.287,D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\Unit1.pas=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uModels.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.241,=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.183,=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.981,=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
