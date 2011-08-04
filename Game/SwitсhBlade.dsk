@@ -5,19 +5,34 @@ File_2=TSourceModule,'D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\u
 
 [Modules]
 Module0=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uMain.pas
-Module1=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\SwitсhBlade.dproj
-Module2=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uGameMenu.pas
-Module3=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uGameEngine.pas
-Module4=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uGUIElements.pas
-Module5=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uOptions.pas
-Module6=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uMaterials.pas
-Module7=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uGameIntro.pas
-Module8=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uCommonFuncProc.pas
-Module9=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uLog.pas
+Module1=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uGameIntro.pas
+Module2=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uCommonFuncProc.pas
+Module3=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uLog.pas
+Module4=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\SwitсhBlade.dproj
+Module5=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uGameMenu.pas
+Module6=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uGameEngine.pas
+Module7=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uGUIElements.pas
+Module8=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uOptions.pas
+Module9=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uMaterials.pas
 Count=10
 EditWindowCount=1
 
 [D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uMain.pas]
+ModuleType=TSourceModule
+FormState=1
+FormOnTop=1
+
+[D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uGameIntro.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uCommonFuncProc.pas]
+ModuleType=TSourceModule
+FormState=0
+FormOnTop=0
+
+[D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uLog.pas]
 ModuleType=TSourceModule
 FormState=1
 FormOnTop=1
@@ -48,21 +63,6 @@ FormOnTop=0
 [D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uMaterials.pas]
 ModuleType=TSourceModule
 FormState=0
-FormOnTop=0
-
-[D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uGameIntro.pas]
-ModuleType=TSourceModule
-FormState=0
-FormOnTop=0
-
-[D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uCommonFuncProc.pas]
-ModuleType=TSourceModule
-FormState=0
-FormOnTop=0
-
-[D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uLog.pas]
-ModuleType=TSourceModule
-FormState=1
 FormOnTop=0
 
 [EditWindow0]
@@ -556,8 +556,8 @@ SplitPos=106
 
 [PropInspDesignerSelection]
 ArrangeBy=Name
-SelectedItem=,
-ExpandedItems=Anchors=0,BorderIcons=0,Constraints=0,Font=0,GlassFrame=0,HorzScrollBar=0,Margins=0,Padding=0,Font.Style=0
+SelectedItem=Action,
+ExpandedItems=Anchors=0,BorderIcons=0,Constraints=0,Font=0,GlassFrame=0,HorzScrollBar=0,Margins=0,Padding=0
 
 [DataExplorer]
 PercentageSizes=1
@@ -777,8 +777,8 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=1733
-Top=45
+Left=0
+Top=0
 Width=1188
 Height=9097
 MaxLeft=-1
@@ -802,7 +802,7 @@ Visible=0
 Docked=1
 State=0
 Left=0
-Top=45
+Top=0
 Width=1318
 Height=9135
 MaxLeft=-1
