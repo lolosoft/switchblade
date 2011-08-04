@@ -5,8 +5,8 @@ File_2=TSourceModule,'D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\u
 
 [Modules]
 Module0=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uMain.pas
-Module1=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uGameMenu.pas
-Module2=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\SwitсhBlade.dproj
+Module1=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\SwitсhBlade.dproj
+Module2=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uGameMenu.pas
 Module3=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uGameEngine.pas
 Module4=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uGUIElements.pas
 Module5=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uOptions.pas
@@ -22,13 +22,13 @@ ModuleType=TSourceModule
 FormState=1
 FormOnTop=1
 
+[D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\SwitсhBlade.dproj]
+ModuleType=TBaseProject
+
 [D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uGameMenu.pas]
 ModuleType=TSourceModule
 FormState=0
 FormOnTop=0
-
-[D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\SwitсhBlade.dproj]
-ModuleType=TBaseProject
 
 [D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\Game\uGameEngine.pas]
 ModuleType=TSourceModule
@@ -96,13 +96,13 @@ BorlandEditorCodeExplorer=BorlandEditorCodeExplorer@EditWindow0
 TopPanelSize=0
 LeftPanelSize=1099
 LeftPanelClients=PropertyInspector
-LeftPanelData=000008000101000000007D14000000000000014B0400000000000001000000006C2400001100000050726F7065727479496E73706563746F72FFFFFFFF
+LeftPanelData=00000800010100000000B812000000000000014B040000000000000100000000472100001100000050726F7065727479496E73706563746F72FFFFFFFF
 RightPanelSize=974
 RightPanelClients=DockSite4
-RightPanelData=000008000101000000007D1400000000000001CE0300000000000001000000006C24000009000000446F636B5369746534FFFFFFFF
-BottomPanelSize=0
+RightPanelData=00000800010100000000B81200000000000001CE0300000000000001000000004721000009000000446F636B5369746534FFFFFFFF
+BottomPanelSize=778
 BottomPanelClients=DockSite1,MessageView
-BottomPanelData=0000080001020200000009000000446F636B53697465310F0000004D65737361676556696577466F726D7245000000000000024B03000000000000FFFFFFFF
+BottomPanelData=0000080001020100000009000000446F636B53697465317245000000000000020A030000000000000100000000724500000F0000004D65737361676556696577466F726DFFFFFFFF
 BottomMiddlePanelSize=0
 BottomMiddlePanelClients=DockSite0
 BottomMiddelPanelData=0000080001020100000009000000446F636B5369746530961D00000000000002F206000000000000FFFFFFFF
@@ -312,18 +312,18 @@ StayOnTop=0
 [MessageView]
 PercentageSizes=1
 Create=1
-Visible=0
+Visible=1
 Docked=1
 State=0
 Left=0
-Top=0
-Width=2771
-Height=646
+Top=23
+Width=10000
+Height=580
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=2771
-ClientHeight=646
-TBDockHeight=646
+ClientWidth=10000
+ClientHeight=580
+TBDockHeight=580
 LRDockWidth=2771
 Dockable=1
 StayOnTop=0
@@ -337,11 +337,11 @@ State=0
 Left=0
 Top=0
 Width=974
-Height=9354
+Height=8527
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=974
-ClientHeight=9354
+ClientHeight=8527
 TBDockHeight=7158
 LRDockWidth=2000
 Dockable=1
@@ -543,11 +543,11 @@ State=0
 Left=0
 Top=23
 Width=1099
-Height=9354
+Height=8527
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=1099
-ClientHeight=9354
+ClientHeight=8527
 TBDockHeight=9135
 LRDockWidth=1099
 Dockable=1
@@ -556,7 +556,7 @@ SplitPos=106
 
 [PropInspDesignerSelection]
 ArrangeBy=Name
-SelectedItem=Font,
+SelectedItem=,
 ExpandedItems=Anchors=0,BorderIcons=0,Constraints=0,Font=0,GlassFrame=0,HorzScrollBar=0,Margins=0,Padding=0,Font.Style=0
 
 [DataExplorer]
@@ -828,11 +828,11 @@ State=0
 Left=0
 Top=23
 Width=974
-Height=9354
+Height=8527
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=974
-ClientHeight=9354
+ClientHeight=8527
 TBDockHeight=9097
 LRDockWidth=974
 Dockable=1
