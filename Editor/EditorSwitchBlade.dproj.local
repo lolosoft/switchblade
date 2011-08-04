@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.pas,D:\DelphiPrograms\BDS2006\Win32\GLScene\SwitchBlade\Editor\Unit1.pas=D:\DelphiPrograms\BDS2006\Win32\GLScene\SwitchBlade\Game\uRoom.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.pas,D:\DelphiPrograms\BDS2007\Win32\GLScene\SwitchBlade\Editor\Unit1.pas=D:\DelphiPrograms\BDS2007\Win32\GLScene\SwitchBlade\Game\uGameUnits.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.pas,D:\DelphiPrograms\BDS2007\Win32\GLScene\SwitchBlade\Editor\Unit1.pas=D:\DelphiPrograms\BDS2007\Win32\GLScene\SwitchBlade\Editor\uGameMenuItem.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.pas,D:\DelphiPrograms\BDS2007\Win32\GLScene\SwitchBlade\Game\PNGImage\pngzlib.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.pas,D:\DelphiPrograms\BDS2007\Win32\GLScene\SwitchBlade\Editor\uGameMenuItem.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.dfm,D:\Документы\Borland Studio Projects\Unit1.dfm=D:\DelphiPrograms\BDS2006\Win32\GLScene\SwitchBlade\Editor\uMain.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.pas,D:\DelphiPrograms\BDS2007\Win32\GLScene\SwitchBlade\Editor\NativeXml.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.pas,D:\Документы\Borland Studio Projects\Unit1.pas=D:\DelphiPrograms\BDS2006\Win32\GLScene\SwitchBlade\Editor\uMain.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.233,=D:\DelphiPrograms\BDS2011\Win32\GLScene\SwitchBlade\CommonUnits\NativeXml\NativeXml.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.inc,D:\DelphiPrograms\BDS2006\Win32\GLScene\SwitchBlade\SwitchBlade.inc=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.pas,D:\DelphiPrograms\BDS2007\Win32\GLScene\SwitchBlade\Game\uMainMenu.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.bdsproj,D:\Документы\Borland Studio Projects\Project1.bdsproj=D:\DelphiPrograms\BDS2006\Win32\GLScene\SwitchBlade\Editor\EditorSwitchBlade.bdsproj</Transaction>
+  </Transactions>
+</BorlandProject>

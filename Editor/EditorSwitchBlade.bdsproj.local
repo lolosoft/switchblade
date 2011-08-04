@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2009.08.23 12:59:42.890.pas,D:\Документы\Borland Studio Projects\Unit1.pas=D:\DelphiPrograms\BDS2006\Win32\GLScene\SwitchBlade\Editor\uMain.pas</Transaction>
+    <Transaction>2009.08.23 12:59:42.890.dfm,D:\Документы\Borland Studio Projects\Unit1.dfm=D:\DelphiPrograms\BDS2006\Win32\GLScene\SwitchBlade\Editor\uMain.dfm</Transaction>
+    <Transaction>2009.08.23 13:00:00.109.bdsproj,D:\Документы\Borland Studio Projects\Project1.bdsproj=D:\DelphiPrograms\BDS2006\Win32\GLScene\SwitchBlade\Editor\EditorSwitchBlade.bdsproj</Transaction>
+    <Transaction>2009.09.13 16:41:18.750.inc,D:\DelphiPrograms\BDS2006\Win32\GLScene\SwitchBlade\SwitchBlade.inc=</Transaction>
+    <Transaction>2009.09.16 15:05:39.781.pas,D:\DelphiPrograms\BDS2006\Win32\GLScene\SwitchBlade\Editor\Unit1.pas=D:\DelphiPrograms\BDS2006\Win32\GLScene\SwitchBlade\Game\uRoom.pas</Transaction>
+  </Transactions>
+</BorlandProject>
