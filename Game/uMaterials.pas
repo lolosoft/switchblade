@@ -144,6 +144,7 @@ end;
 
 function SaveMaterialsToXMLFile(AFileName: string; ALibMaterials: TGLLibMaterialsEx): boolean;
 begin
+  Result:= false;
   with TNativeXml.Create(nil) do try
     try
       VersionString:= '1.0';
@@ -211,6 +212,7 @@ end;
 
 function SaveMatLibComponentsToXMLFile(AFileName: string; AMatLibComponents: TGLMatLibComponents): boolean;
 begin
+  Result:= false;
   with TNativeXml.Create(nil) do try
     try
       VersionString:= '1.0';
@@ -286,6 +288,7 @@ end;
 
 function SaveLibMaterialToXMLFile(AFileName: string; ALibMaterial: TGLLibMaterialEx): boolean;
 begin
+  Result:= false;
   with TNativeXml.Create(nil) do try
     try
       VersionString:= '1.0';

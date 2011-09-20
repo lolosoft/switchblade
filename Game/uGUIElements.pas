@@ -381,6 +381,7 @@ var
   tmpRegion: TRect;
 begin
   // проверить курсор на нахождение в регионе GUI-элемента
+  Result:= false;
   if FEventsWithChilds then begin
     for i:= 0 to FChildsForEvents.Count - 1 do
       if Assigned(FChildsForEvents[i]) then begin
