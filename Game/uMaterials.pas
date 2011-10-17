@@ -266,7 +266,7 @@ begin
   Result:= false;
   if Assigned(ANode) and Assigned(AlibMaterial) then with ANode do try
     if NodeByName('Name') <> nil then
-      ALibMaterial.Name:=            Name;
+      ALibMaterial.Name:= string(Name);
     if NodeByName('ApplicableLevel') <> nil then
       ALibMaterial.ApplicableLevel:= TGLMaterialLevel(NodeByName('ApplicableLevel').ValueAsInteger);
 

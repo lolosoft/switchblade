@@ -87,7 +87,7 @@
 						<VersionInfo Name="MajorVer">0</VersionInfo>
 						<VersionInfo Name="MinorVer">1</VersionInfo>
 						<VersionInfo Name="Release">0</VersionInfo>
-						<VersionInfo Name="Build">143</VersionInfo>
+						<VersionInfo Name="Build">145</VersionInfo>
 						<VersionInfo Name="Debug">False</VersionInfo>
 						<VersionInfo Name="PreRelease">True</VersionInfo>
 						<VersionInfo Name="Special">False</VersionInfo>
@@ -99,7 +99,7 @@
 					<VersionInfoKeys>
 						<VersionInfoKeys Name="CompanyName">LOLO Soft</VersionInfoKeys>
 						<VersionInfoKeys Name="FileDescription">Игра SwitchBlade</VersionInfoKeys>
-						<VersionInfoKeys Name="FileVersion">0.1.0.143</VersionInfoKeys>
+						<VersionInfoKeys Name="FileVersion">0.1.0.145</VersionInfoKeys>
 						<VersionInfoKeys Name="InternalName">SwitchBlade</VersionInfoKeys>
 						<VersionInfoKeys Name="LegalCopyright">LOLO Soft</VersionInfoKeys>
 						<VersionInfoKeys Name="LegalTrademarks">LOLO Soft</VersionInfoKeys>
