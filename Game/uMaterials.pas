@@ -5,7 +5,7 @@ interface
 uses
   Windows, SysUtils, Graphics, GLMaterial, GLMaterialEx, GLTexture, GLState, pngimage, ddsimage, tga,
 
-  NativeXML,
+  NativeXML, NativeXMLClassHelper,
 
   uCommonFuncProc;
 

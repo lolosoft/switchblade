@@ -62,16 +62,16 @@ type
     procedure LoadTexture(AFileName: string; ANeedApplySize: boolean = true);
     function LoadTextureEx(AFileName: string): integer;
     // регион, охватываемый GUI-элементом в оконных координатах
-    property Region: TRect                            read GetRegion;
-    property Enabled: boolean                         read FEnabled                 write FEnabled;
+    property Region: TRect                              read GetRegion;
+    property Enabled: boolean                           read FEnabled                 write FEnabled;
     // реагировать на курсор совместно с чилдами
-    property EventsWithChilds: boolean                read FEventsWithChilds        write FEventsWithChilds;
+    property EventsWithChilds: boolean                  read FEventsWithChilds        write FEventsWithChilds;
 
-    property OnClick: TGUIElementEvent                read FOnClick                 write FOnClick;
-    property OnMouseEnter: TGUIElementEvent           read FOnMouseEnter            write FOnMouseEnter;
-    property OnMouseLeave: TGUIElementEvent           read FOnMouseLeave            write FOnMouseLeave;
-    property Items[Index: integer]: TCustomGUIElement read GetElementByIndex;
-    property ParentGUIElement: TCustomGUIElement      read GetParentGUIElement;
+    property OnClick: TGUIElementEvent                  read FOnClick                 write FOnClick;
+    property OnMouseEnter: TGUIElementEvent             read FOnMouseEnter            write FOnMouseEnter;
+    property OnMouseLeave: TGUIElementEvent             read FOnMouseLeave            write FOnMouseLeave;
+    property Items[Index: integer]: TCustomGUIElement   read GetElementByIndex;
+    property ParentGUIElement: TCustomGUIElement        read GetParentGUIElement;
 
     property ChildsForEvents[Index: integer]: TGLBaseSceneObject read GetChildForEventsByIndex;
   end;
@@ -90,9 +90,9 @@ type
     function AddButton(AName: string = ''): TGUIButton;
     function AddCheckBox(AName: string = ''): TGUICheckBox;
 
-    property OnFormClick:      TGUIFormEvent            read FOnFormClick           write FOnFormClick;
-    property OnFormMouseEnter: TGUIFormEvent            read FOnFormMouseEnter      write FOnFormMouseEnter;
-    property OnFormMouseLeave: TGUIFormEvent            read FOnFormMouseLeave      write FOnFormMouseLeave;
+    property OnFormClick:      TGUIFormEvent            read FOnFormClick             write FOnFormClick;
+    property OnFormMouseEnter: TGUIFormEvent            read FOnFormMouseEnter        write FOnFormMouseEnter;
+    property OnFormMouseLeave: TGUIFormEvent            read FOnFormMouseLeave        write FOnFormMouseLeave;
   end;
 
 
@@ -110,9 +110,9 @@ type
     function AddButton(AName: string = ''): TGUIButton;
     function AddCheckBox(AName: string = ''): TGUICheckBox;
 
-    property OnPanelClick:      TGUIPanelEvent          read FOnPanelClick           write FOnPanelClick;
-    property OnPanelMouseEnter: TGUIPanelEvent          read FOnPanelMouseEnter      write FOnPanelMouseEnter;
-    property OnPanelMouseLeave: TGUIPanelEvent          read FOnPanelMouseLeave      write FOnPanelMouseLeave;
+    property OnPanelClick:      TGUIPanelEvent          read FOnPanelClick            write FOnPanelClick;
+    property OnPanelMouseEnter: TGUIPanelEvent          read FOnPanelMouseEnter       write FOnPanelMouseEnter;
+    property OnPanelMouseLeave: TGUIPanelEvent          read FOnPanelMouseLeave       write FOnPanelMouseLeave;
   end;
 
   TGUIButton = class(TCustomGUIElement)
