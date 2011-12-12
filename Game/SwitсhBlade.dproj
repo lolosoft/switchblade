@@ -1,7 +1,7 @@
 ﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 		<PropertyGroup>
 			<ProjectGuid>{33D7E2C3-43FA-47A0-8545-1645465E08D6}</ProjectGuid>
-			<ProjectVersion>12.3</ProjectVersion>
+			<ProjectVersion>12.2</ProjectVersion>
 			<MainSource>SwitсhBlade.dpr</MainSource>
 			<Base>True</Base>
 			<Config Condition="'$(Config)'==''">Debug</Config>
@@ -52,7 +52,6 @@
 			</DCCReference>
 			<DCCReference Include="uGameEngine.pas"/>
 			<DCCReference Include="..\CommonUnits\NativeXml\NativeXml.pas"/>
-			<DCCReference Include="..\CommonUnits\NativeXml\NativeXmlClassHelper.pas"/>
 			<DCCReference Include="uGameIntro.pas"/>
 			<DCCReference Include="uGameMenu.pas"/>
 			<DCCReference Include="uCommonFuncProc.pas"/>
@@ -75,7 +74,7 @@
 			</BuildConfiguration>
 		</ItemGroup>
 		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')" Project="$(BDS)\Bin\CodeGear.Delphi.Targets"/>
-		<Import Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')" Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj"/>
+		<Import Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\8.0\UserTools.proj')" Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\8.0\UserTools.proj"/>
 		<ProjectExtensions>
 			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
 			<Borland.ProjectType/>
@@ -87,7 +86,7 @@
 						<VersionInfo Name="MajorVer">0</VersionInfo>
 						<VersionInfo Name="MinorVer">1</VersionInfo>
 						<VersionInfo Name="Release">0</VersionInfo>
-						<VersionInfo Name="Build">145</VersionInfo>
+						<VersionInfo Name="Build">137</VersionInfo>
 						<VersionInfo Name="Debug">False</VersionInfo>
 						<VersionInfo Name="PreRelease">True</VersionInfo>
 						<VersionInfo Name="Special">False</VersionInfo>
@@ -99,7 +98,7 @@
 					<VersionInfoKeys>
 						<VersionInfoKeys Name="CompanyName">LOLO Soft</VersionInfoKeys>
 						<VersionInfoKeys Name="FileDescription">Игра SwitchBlade</VersionInfoKeys>
-						<VersionInfoKeys Name="FileVersion">0.1.0.145</VersionInfoKeys>
+						<VersionInfoKeys Name="FileVersion">0.1.0.137</VersionInfoKeys>
 						<VersionInfoKeys Name="InternalName">SwitchBlade</VersionInfoKeys>
 						<VersionInfoKeys Name="LegalCopyright">LOLO Soft</VersionInfoKeys>
 						<VersionInfoKeys Name="LegalTrademarks">LOLO Soft</VersionInfoKeys>

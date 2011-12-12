@@ -6,7 +6,6 @@ uses
   uMain in 'uMain.pas' {fmMain},
   uGameEngine in 'uGameEngine.pas',
   NativeXml in '..\CommonUnits\NativeXml\NativeXml.pas',
-  NativeXmlClassHelper in '..\CommonUnits\NativeXml\NativeXmlClassHelper.pas',
   uGameIntro in 'uGameIntro.pas',
   uGameMenu in 'uGameMenu.pas',
   uCommonFuncProc in 'uCommonFuncProc.pas',
