@@ -11,7 +11,7 @@ uses
   uGameUnits in '..\_OLD\uGameUnits.pas',
   uGameMenu in '..\_OLD\uGameMenu.pas',
   uGameMenuItem in '..\_OLD\uGameMenuItem.pas',
-  NativeXml in '..\NativeXml\NativeXml.pas';
+  NativeXml in '..\CommonUnits\NativeXml\NativeXml.pas';
 
 {$R *.res}
 
