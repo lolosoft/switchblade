@@ -57,13 +57,13 @@ object fmMain: TfmMain
     Top = 116
     Width = 792
     Height = 467
-    ActivePage = sheetMaterials
     Align = alClient
+    TabOrder = 5
+    Properties.ActivePage = sheetMaterials
+    Properties.Style = 11
     LookAndFeel.Kind = lfStandard
     LookAndFeel.NativeStyle = False
     LookAndFeel.SkinName = 'Silver'
-    Style = 11
-    TabOrder = 5
     OnChange = cxPagesChange
     ClientRectBottom = 461
     ClientRectLeft = 3
@@ -164,10 +164,6 @@ object fmMain: TfmMain
           OnMouseDown = ModelViewerMouseDown
           OnMouseMove = ModelViewerMouseMove
           TabOrder = 0
-          ExplicitLeft = 2
-          ExplicitTop = 18
-          ExplicitWidth = 351
-          ExplicitHeight = 388
         end
       end
       object cxButton1: TcxButton
@@ -805,13 +801,13 @@ object fmMain: TfmMain
           Top = 15
           Width = 568
           Height = 171
-          ActivePage = sheetFrontProperties
           Align = alClient
-          LookAndFeel.SkinName = 'Silver'
           ParentShowHint = False
           ShowHint = False
           TabOrder = 0
-          TabWidth = 270
+          Properties.ActivePage = sheetFrontProperties
+          Properties.TabWidth = 270
+          LookAndFeel.SkinName = 'Silver'
           ExplicitTop = 18
           ExplicitHeight = 170
           ClientRectBottom = 165
@@ -821,7 +817,6 @@ object fmMain: TfmMain
           object sheetFrontProperties: TcxTabSheet
             Caption = 'FrontProperties'
             ImageIndex = 0
-            ExplicitHeight = 138
             object cxGroupBox7: TcxGroupBox
               Left = 0
               Top = 0
@@ -1755,7 +1750,6 @@ object fmMain: TfmMain
           object sheetBackProperties: TcxTabSheet
             Caption = 'BackProperties'
             ImageIndex = 1
-            ExplicitHeight = 138
             object cxGroupBox11: TcxGroupBox
               Left = 0
               Top = 0
@@ -2715,10 +2709,6 @@ object fmMain: TfmMain
           OnMouseDown = MaterialViewerMouseDown
           OnMouseMove = MaterialViewerMouseMove
           TabOrder = 0
-          ExplicitLeft = 2
-          ExplicitTop = 18
-          ExplicitWidth = 218
-          ExplicitHeight = 147
         end
       end
     end
@@ -2777,10 +2767,6 @@ object fmMain: TfmMain
           Buffer.BackgroundColor = clBlack
           Align = alClient
           TabOrder = 0
-          ExplicitLeft = 2
-          ExplicitTop = 18
-          ExplicitWidth = 366
-          ExplicitHeight = 319
         end
       end
       object btnLoadMainMenu: TcxButton
@@ -5812,7 +5798,6 @@ object fmMain: TfmMain
   object cxGridViewRepository: TcxGridViewRepository
     Left = 710
     object tvModels: TcxGridBandedTableView
-      NavigatorButtons.ConfirmDelete = False
       OnEditValueChanged = tvModelsEditValueChanged
       OnFocusedItemChanged = tvModelsFocusedItemChanged
       OnFocusedRecordChanged = tvModelsFocusedRecordChanged
@@ -6027,7 +6012,6 @@ object fmMain: TfmMain
       end
     end
     object tvMenuItems: TcxGridBandedTableView
-      NavigatorButtons.ConfirmDelete = False
       DataController.Summary.DefaultGroupSummaryItems = <>
       DataController.Summary.FooterSummaryItems = <>
       DataController.Summary.SummaryGroups = <>

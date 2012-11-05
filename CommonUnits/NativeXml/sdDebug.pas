@@ -62,33 +62,33 @@ const
 
 type
   // event with debug data
-  TsdDebugEvent = procedure(Sender: TObject; WarnStyle: TsdWarnStyle; const AMessage: Utf8String) of object;
+  TsdDebugEvent = procedure(Sender: TObject; WarnStyle: TsdWarnStyle; const AMessage: string) of object;
 
   // simple update event
   TsdUpdateEvent = procedure(Sender: TObject) of object;
 
   IDebugMessage = interface(IInterface)
-    procedure DoDebugOut(Sender: TObject; WarnStyle: TsdWarnStyle; const AMessage: Utf8String);
+    procedure DoDebugOut(Sender: TObject; WarnStyle: TsdWarnStyle; const AMessage: string);
   end;
 
   TDebugComponent = class(TComponent)
   protected
     FOnDebugOut: TsdDebugEvent;
   public
-    procedure DoDebugOut(Sender: TObject; WarnStyle: TsdWarnStyle; const AMessage: Utf8String); virtual;
+    procedure DoDebugOut(Sender: TObject; WarnStyle: TsdWarnStyle; const AMessage: string); virtual;
     property OnDebugOut: TsdDebugEvent read FOnDebugOut write FOnDebugOut;
   end;
 
   TDebugPersistent = class(TPersistent)
   protected
     FOwner: TDebugComponent;
-    procedure DoDebugOut(Sender: TObject; WarnStyle: TsdWarnStyle; const AMessage: Utf8String); virtual;
+    procedure DoDebugOut(Sender: TObject; WarnStyle: TsdWarnStyle; const AMessage: string); virtual;
   end;
 
   TDebugObject = class(TObject)
   protected
     FOnDebugOut: TsdDebugEvent;
-    procedure DoDebugOut(Sender: TObject; WarnStyle: TsdWarnStyle; const AMessage: Utf8String); virtual;
+    procedure DoDebugOut(Sender: TObject; WarnStyle: TsdWarnStyle; const AMessage: string); virtual;
   public
     property OnDebugOut: TsdDebugEvent read FOnDebugOut write FOnDebugOut;
   end;
@@ -133,7 +133,7 @@ end;
 
 { TDebugComponent }
 
-procedure TDebugComponent.DoDebugOut(Sender: TObject; WarnStyle: TsdWarnStyle; const AMessage: Utf8String);
+procedure TDebugComponent.DoDebugOut(Sender: TObject; WarnStyle: TsdWarnStyle; const AMessage: string);
 begin
   if assigned(FOnDebugOut) then
     FOnDebugOut(Sender, WarnStyle, AMessage)
@@ -141,7 +141,7 @@ end;
 
 { TDebugPersistent }
 
-procedure TDebugPersistent.DoDebugOut(Sender: TObject; WarnStyle: TsdWarnStyle; const AMessage: Utf8String);
+procedure TDebugPersistent.DoDebugOut(Sender: TObject; WarnStyle: TsdWarnStyle; const AMessage: string);
 begin
   if FOwner is TDebugComponent then
     TDebugComponent(FOwner).DoDebugOut(Sender, WarnStyle, AMessage);
@@ -149,7 +149,7 @@ end;
 
 { TDebugObject }
 
-procedure TDebugObject.DoDebugOut(Sender: TObject; WarnStyle: TsdWarnStyle; const AMessage: Utf8String);
+procedure TDebugObject.DoDebugOut(Sender: TObject; WarnStyle: TsdWarnStyle; const AMessage: string);
 begin
   if assigned(FOnDebugOut) then
     FOnDebugOut(Sender, WarnStyle, AMessage);

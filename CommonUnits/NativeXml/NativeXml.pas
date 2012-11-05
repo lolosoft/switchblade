@@ -276,7 +276,7 @@ type
     FOwner: TDebugComponent;
     FRawBuffer: array of byte;
     FRawBufferSize: integer;
-    procedure DoDebugOut(Sender: TObject; WarnStyle: TsdWarnStyle; const AMessage: Utf8String);
+    procedure DoDebugOut(Sender: TObject; WarnStyle: TsdWarnStyle; const AMessage: string);
   public
     FEncoding: TsdStringEncoding;
     FCodePage: integer;
@@ -1761,7 +1761,7 @@ end;
 
 function TXmlNode.GetAttributeValueAsInteger(Index: integer): integer;
 begin
-  Result := StrToIntDef(GetAttributeValue(Index), 0);
+  Result := StrToIntDef(string(GetAttributeValue(Index)), 0);
 end;
 
 function TXmlNode.GetAttributeValueByName(const AName: Utf8String): Utf8String;
@@ -2126,7 +2126,7 @@ end;
 
 procedure TXmlNode.SetAttributeValueAsInteger(Index: integer; const Value: integer);
 begin
-  SetAttributeValue(Index, IntToStr(Value));
+  SetAttributeValue(Index, UTF8String(IntToStr(Value)));
 end;
 
 procedure TXmlNode.SetAttributeValueByName(const AName, Value: Utf8String);
@@ -2211,17 +2211,17 @@ end;
 
 function TXmlNode.ReadAttributeBool(const AName: Utf8String; ADefault: boolean = False): boolean;
 begin
-  Result := StrToBoolDef(AttributeValueByName[AName], ADefault);
+  Result := StrToBoolDef(string(AttributeValueByName[AName]), ADefault);
 end;
 
 function TXmlNode.ReadAttributeInteger(const AName: Utf8String; ADefault: integer = 0): integer;
 begin
-  Result := StrToIntDef(AttributeValueByName[AName], ADefault);
+  Result := StrToIntDef(string(AttributeValueByName[AName]), ADefault);
 end;
 
 function TXmlNode.ReadAttributeFloat(const AName: Utf8String; ADefault: double = 0): double;
 begin
-  Result := StrToFloatDef(AttributeValueByName[AName], ADefault);
+  Result := StrToFloatDef(string(AttributeValueByName[AName]), ADefault);
 end;
 
 function TXmlNode.ReadAttributeString(const AName: Utf8String; ADefault: Utf8String = ''): Utf8String;
@@ -2336,7 +2336,7 @@ end;
 
 function TXmlNode.GetValueAsBoolDef(ADefault: boolean): boolean;
 begin
-  Result := StrToBoolDef(GetValue, ADefault);
+  Result := StrToBoolDef(string(GetValue), ADefault);
 end;
 
 function TXmlNode.GetValueAsDateTimeDef(ADefault: TDateTime): TDateTime;
@@ -2350,22 +2350,22 @@ var
 begin
   // backwards compat: old version used to allow commas in floats
   V := sdCommaToDot(GetValue);
-  Result := StrToFloatDef(V, ADefault);
+  Result := StrToFloatDef(string(V), ADefault);
 end;
 
 function TXmlNode.GetValueAsIntegerDef(ADefault: integer): integer;
 begin
-  Result := StrToIntDef(GetValue, ADefault);
+  Result := StrToIntDef(string(GetValue), ADefault);
 end;
 
 function TXmlNode.GetValueAsInt64Def(ADefault: int64): int64;
 begin
-  Result := StrToInt64Def(GetValue, ADefault);
+  Result := StrToInt64Def(string(GetValue), ADefault);
 end;
 
 function TXmlNode.GetValueAsBool: boolean;
 begin
-  Result := StrToBool(GetValue);
+  Result := StrToBool(string(GetValue));
 end;
 
 function TXmlNode.GetValueAsDateTime: TDateTime;
@@ -2375,17 +2375,17 @@ end;
 
 function TXmlNode.GetValueAsFloat: double;
 begin
-  Result := StrToFloat(GetValue);
+  Result := StrToFloat(string(GetValue));
 end;
 
 function TXmlNode.GetValueAsInteger: integer;
 begin
-  Result := StrToInt(GetValue);
+  Result := StrToInt(string(GetValue));
 end;
 
 function TXmlNode.GetValueAsInt64: int64;
 begin
-  Result := StrToInt64(GetValue);
+  Result := StrToInt64(string(GetValue));
 end;
 
 procedure TXmlNode.SetValueAsBool(const AValue: boolean);
@@ -3245,7 +3245,7 @@ end;
 
 procedure TsdQuotedText.WriteStream(S: TStream);
 begin
-  sdWriteToStream(S, FQuoteChar + GetCoreValue + FQuoteChar);
+  sdWriteToStream(S, UTF8String(string(FQuoteChar) + string(GetCoreValue) + string(FQuoteChar)));
   DoProgress(S.Position);
 end;
 
@@ -4877,7 +4877,7 @@ begin
   S := TsdStringStream.Create('');
   try
     SaveToStream(S);
-    Result := S.DataString;
+    Result := string(S.DataString);
   finally
     S.Free;
   end;
@@ -4934,14 +4934,14 @@ function TNativeXml.AttrHex(AName: Utf8String; AValue, ADigits: integer): TsdAtt
 begin
   Result := TsdAttribute.Create(Self);
   Result.Name := AName;
-  Result.Value := '$' + IntToHex(AValue, ADigits);
+  Result.Value := UTF8String('$' + IntToHex(AValue, ADigits));
 end;
 
 function TNativeXml.AttrHex(AName: Utf8String; AValue: int64; ADigits: integer): TsdAttribute;
 begin
   Result := TsdAttribute.Create(Self);
   Result.Name := AName;
-  Result.Value := '$' + IntToHex(AValue, ADigits);
+  Result.Value := UTF8String('$' + IntToHex(AValue, ADigits));
 end;
 
 function TNativeXml.AttrFloat(AName: Utf8String; AValue: double): TsdAttribute;
@@ -5648,7 +5648,7 @@ begin
     IncCurrentIdxCheck(Count);
     if not (Result in cXmlBlankChars) then
       exit;
-    Blanks := Blanks + Result;
+    Blanks := UTF8String(string(Blanks) + string(AnsiString(Result)));
   end;
   Result := #0;
 end;
@@ -5814,7 +5814,7 @@ begin
 end;
 
 procedure TsdXmlWriter.DoDebugOut(Sender: TObject; WarnStyle: TsdWarnStyle;
-  const AMessage: Utf8String);
+  const AMessage: string);
 begin
   if FOwner is TDebugComponent then
     TDebugComponent(FOwner).DoDebugOut(Sender, WarnStyle, AMessage);
@@ -6400,7 +6400,7 @@ end;
 function Utf8CompareText(const S1, S2: Utf8String): integer;
 begin
   // AnsiCompareText is case-insensitive
-  Result := AnsiCompareText(AnsiString(S1), AnsiString(S2));
+  Result := AnsiCompareText(string(S1), string(S2));
 end;
 
 function GetTimeZoneBias: Integer;
@@ -6529,28 +6529,28 @@ begin
   end;
 
   // Body
-  Body := IntToStr(IntVal);
+  Body := UTF8String(IntToStr(IntVal));
   while PointPos > SignificantDigits do
   begin
-    Body := Body + '0';
+    Body := Body + UTF8String('0');
     inc(SignificantDigits);
   end;
   while PointPos < 0 do
   begin
-    Body := '0' + Body;
+    Body := UTF8String('0') + Body;
     inc(PointPos);
   end;
   if PointPos = 0 then
-    Body := '.' + Body
+    Body := UTF8String('.') + Body
   else
     if PointPos < SignificantDigits then
-      Body := copy(Body, 1, PointPos) + '.' + copy(Body, PointPos + 1, SignificantDigits);
+      Body := UTF8String(copy(string(Body), 1, PointPos) + '.' + copy(string(Body), PointPos + 1, SignificantDigits));
 
   // Final result
   if ScPower = 0 then
     Result := Result + Body
   else
-    Result := Result + Body + 'E' + IntToStr(ScPower);
+    Result := Result + Body + UTF8String('E') + UTF8String(IntToStr(ScPower));
 end;
 
 function sdIntToString(Value: integer): Utf8String;
@@ -6576,15 +6576,15 @@ var
   AYear, AMonth, ADay, AHour, AMin, ASec, AMSec: word;
   ALocalBias, ABias: Integer;
 begin
-  AYear  := StrToInt(copy(ADate, 1, 4));
-  AMonth := StrToInt(copy(ADate, 6, 2));
-  ADay   := StrToInt(copy(ADate, 9, 2));
+  AYear  := StrToInt(copy(string(ADate), 1, 4));
+  AMonth := StrToInt(copy(string(ADate), 6, 2));
+  ADay   := StrToInt(copy(string(ADate), 9, 2));
   if Length(ADate) > 16 then
   begin
-    AHour := StrToInt(copy(ADate, 12, 2));
-    AMin  := StrToInt(copy(ADate, 15, 2));
-    ASec  := StrToIntDef(copy(ADate, 18, 2), 0); // They might be omitted, so default to 0
-    AMSec := StrToIntDef(copy(ADate, 21, 3), 0); // They might be omitted, so default to 0
+    AHour := StrToInt(copy(string(ADate), 12, 2));
+    AMin  := StrToInt(copy(string(ADate), 15, 2));
+    ASec  := StrToIntDef(copy(string(ADate), 18, 2), 0); // They might be omitted, so default to 0
+    AMSec := StrToIntDef(copy(string(ADate), 21, 3), 0); // They might be omitted, so default to 0
   end else
   begin
     AHour := 0;
@@ -6600,8 +6600,8 @@ begin
   begin
     if (Length(ADate) > 24) then
     begin
-      ABias := StrToInt(Copy(ADate, 25, 2)) * MinsPerHour +
-        StrToInt(Copy(ADate, 28, 2));
+      ABias := StrToInt(Copy(string(ADate), 25, 2)) * MinsPerHour +
+        StrToInt(Copy(string(ADate), 28, 2));
       if ADate[24] = '+' then
         ABias := ABias * -1;
       Result := Result + ABias / MinsPerDay;

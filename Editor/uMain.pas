@@ -26,7 +26,7 @@ uses
 
   NativeXML,
 
-  uTextures, uLevel, uRoom, cxSpinEdit, cxRadioGroup;
+  uTextures, uLevel, uRoom, cxSpinEdit, cxRadioGroup, dxRibbonSkins, cxPCdxBarPopupMenu;
 
 type
   TfmMain = class(TForm)
